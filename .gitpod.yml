@@ -1,0 +1,11 @@
+
+
+tasks:
+    - name: build
+      init: |
+          pip install --upgrade pip
+          pip install poetry
+          poetry update
+      command: |
+          poetry shell
+          pre-commit install
